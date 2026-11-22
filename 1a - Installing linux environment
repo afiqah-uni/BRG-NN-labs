@@ -1,0 +1,10 @@
+Since I was using a MacBook, I used UTM to create and run my Ubuntu virtual machine. UTM allowed me to run Ubuntu separately from my macOS environment without having to replace my existing operating system.
+I installed Ubuntu within the virtual machine and accessed the Ubuntu environment once the setup was completed.
+
+What I Learned
+This activity introduced me to virtualisation and how a virtual machine can provide a separate operating environment on an existing computer.
+I also learned that Linux can be used through both a graphical desktop environment and a command-line interface. This would become useful in the later lessons, particularly when working with Linux servers.
+
+Reflection
+At first, I found the installation process a little frustrating because I could not get my first virtual machine to run. I was unsure what went wrong, so I decided to create a new VM and try the setup again. Thankfully, the second attempt worked and I was able to access Ubuntu.
+Although I did not fully understand why the first VM failed, this experience taught me that setting up a virtual environment may not always work on the first attempt. I also realised that troubleshooting is part of learning how to work with different operating systems and server environments. It gave me a chance to become more familiar with UTM and the process of creating a virtual machine.

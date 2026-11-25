@@ -1,60 +1,58 @@
-# 2. Exploring Ubuntu Desktop and CLI Tools
+2. Exploring Ubuntu Desktop and CLI Tools
 
-## Introduction
+Introduction
 
-This practical activity introduced me to the Ubuntu desktop environment and Linux command-line interface (CLI). I learned how to navigate directories, view files and folders, create directories and files, and explore the Linux file system using terminal commands.
+This practical activity introduced me to the Ubuntu desktop environment and Linux Command-Line Interface (CLI). I learned how to navigate directories, view files and folders, create directories and files, and explore the Linux file system using terminal commands.
 
-## Tools Used
+Tools Used
 
-- UTM virtualisation software
-- Ubuntu Linux
-- Ubuntu Terminal
+UTM virtualisation software
 
-## Practical Experience
+Ubuntu Linux
 
-I started by opening the Ubuntu Terminal in my UTM virtual machine. I used several basic Linux commands to understand how to navigate and manage files and directories.
+Ubuntu Terminal
 
-First, I used `pwd` to display my current working directory. The output showed `/home/ubuntu`, which is the home directory of my Ubuntu user account.
+My Practical Experience
 
-Next, I used `ls` to list the files and folders in my home directory. This displayed standard directories such as Desktop, Documents, Downloads, Music and Pictures.
+I started by opening the Ubuntu Terminal in my UTM virtual machine. I practised several basic Linux commands to understand how to navigate and manage files and directories.
 
-I then practised creating and navigating directories using `mkdir` and `cd`. I created a directory named `practice` and entered it. After that, I used `touch notes.txt` to create an empty text file inside the directory.
+First, I used the pwd command, which stands for Print Working Directory. It displayed /home/ubuntu, showing that I was currently inside my Ubuntu user's home directory.
 
-I also tried `man ls` to access the manual page for the `ls` command. It displayed detailed information about the command and its available options.
+Next, I used the ls command to list the contents of my home directory. The output displayed folders such as Desktop, Documents, Downloads, Music, Pictures and Videos. This helped me understand how Ubuntu organises a user's personal files and folders.
 
-## Exploring the Linux File System
+I then practised creating and navigating directories. Using mkdir practice, I created a new folder called practice. After that, I used cd practice to enter the folder. I confirmed my new location by running pwd again, which displayed /home/ubuntu/practice.
 
-After practising the basic commands, I explored the main Linux directory structure.
+While inside the practice directory, I used touch notes.txt to create an empty text file. I then ran ls to check that the file had been created successfully.
 
-I used `ls /` to view the directories located at the root of the file system. I learned that Linux organises its files into different directories, each serving a specific purpose.
+I also explored the man command by entering man ls. This opened the manual page for the ls command, which contained detailed information about its usage and available options. Although there was a lot of information displayed, I learned that the manual is useful when I need help understanding a Linux command.
 
-I explored two important directories:
+Exploring the Linux File System
 
-**1. `/etc` – System Configuration**
+After practising the basic commands, I explored the main Linux directory structure using ls /. This displayed the directories located at the root of the file system.
 
-I used `ls /etc` to view its contents. I noticed folders such as `apache2`, `ssh`, `apt` and `systemd`. This helped me understand that `/etc` stores configuration files used by the operating system and its services.
+I learned that Linux organises its files into different directories, each serving a particular purpose. I focused on exploring /etc and /var because they are important when managing and maintaining a Linux system.
 
-**2. `/var` – Variable Data**
+Exploring /etc
 
-I used `ls /var` to view its contents. I noticed directories such as `log`, `cache`, `backups` and `lib`. I learned that `/var` stores data that can change while the system is running. In particular, `/var/log` is important because it contains log files that can help administrators investigate system activity and errors.
+I entered ls /etc to view the contents of the /etc directory. I noticed several configuration folders, including apache2, ssh, apt and systemd.
 
-## Commands Practised
+From this activity, I learned that /etc stores system configuration files. These files help control how the operating system and its installed services behave. For example, the apache2 directory contains configuration files related to the Apache web server.
 
-| Command | Purpose |
-|---|---|
-| `pwd` | Displays the current working directory |
-| `ls` | Lists files and directories |
-| `mkdir practice` | Creates a directory named practice |
-| `cd practice` | Changes into the practice directory |
-| `touch notes.txt` | Creates an empty text file |
-| `man ls` | Displays the manual for the ls command |
-| `ls /` | Lists the main root directories |
-| `ls /etc` | Lists system configuration files and directories |
-| `ls /var` | Lists directories containing variable system data |
+Exploring /var
 
-## Challenges and Reflection
+Next, I entered ls /var to explore the /var directory. The output displayed folders such as backups, cache, lib, log and spool.
+
+I learned that /var stores data that changes while the system is running. One important example is /var/log, which contains system and application log files. These logs are useful for system administrators because they can help identify errors and troubleshoot problems.
+
+Challenges and Reflection
 
 At first, I was unfamiliar with the Linux directory structure and the purpose of the different terminal commands. However, practising each command individually helped me understand how they work and how they can be used together.
+
+One thing I found useful was being able to create my own directory and file using mkdir and touch. This allowed me to practise managing files directly through the terminal instead of relying only on the graphical desktop environment.
+
+Exploring /etc and /var also helped me understand how Linux separates configuration files from changing system data. I realised that knowing where these files are stored is important when troubleshooting and managing a server.
+
+Overall, this activity helped me become more comfortable using the Ubuntu Terminal. These basic CLI skills will be useful in the later practical activities involving Linux services, file permissions, server configuration and system administration.
 
 I also learned that Linux uses a structured directory system rather than organising everything in the same location. Understanding directories such as `/etc` and `/var` is useful when managing and troubleshooting a Linux server.
 
